@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reparación y Montaje de Aire Acondicionado en el Sur de Florida | Delvis Gutierrez Air Conditioning</title>
+<meta name="description" content="Reparación y montaje de aire acondicionado en Miami, Fort Lauderdale y West Palm Beach. Servicio técnico rápido, confiable y con garantía. ¡Llama ahora!">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/archivo-black/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono/600.css">
+<style>
+:root{
+  --navy-950:#050F1F;
+  --navy-900:#081B33;
+  --navy-800:#0B2547;
+  --navy-700:#123465;
+  --ice:#EDF4FB;
+  --ice-2:#F6FAFE;
+  --white:#FFFFFF;
+  --cyan:#4A9BE0;
+  --cyan-deep:#1E63B0;
+  --cyan-light:#7FB6E8;
+  --teal:#12A5A0;
+  --coral:#FF6B4A;
+  --coral-deep:#F24E2E;
+  --ink:#0D2334;
+  --muted:#547082;
+  --line:rgba(13,35,52,.1);
+  --whats:#22C15E;
+  --display:'Archivo Black',sans-serif;
+  --body:'Manrope',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--ice);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+section{scroll-margin-top:92px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:24px}
+.display{font-family:var(--display);font-weight:400}
+.mono{font-family:var(--mono)}
+
+/* ---------- noise overlay ---------- */
+.noise{position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.05;mix-blend-mode:overlay;
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='0.7'/></svg>")}
+
+/* ---------- top strip ---------- */
+.topstrip{background:var(--navy-950);color:rgba(234,245,251,.75);font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 0}
+.ts-in{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.ts-in .fx{color:var(--cyan)}
+
+/* ---------- header ---------- */
+#hdr{position:sticky;top:0;z-index:100;background:rgba(8,27,51,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(234,245,251,.08);transition:box-shadow .3s,background .3s}
+#hdr.scrolled{box-shadow:0 14px 34px -18px rgba(0,0,0,.65);background:rgba(5,15,31,.97)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px;position:relative}
+.scroll-progress{position:absolute;bottom:-1px;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--cyan),var(--cyan-light),var(--coral));z-index:102;transition:width .1s linear}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ice)}
+.brand-flake{width:42px;height:42px;border-radius:11px;background:linear-gradient(150deg,var(--navy-700),var(--navy-900));border:1px solid rgba(127,182,232,.4);display:grid;place-items:center;box-shadow:0 8px 20px -8px rgba(30,99,176,.6)}
+.brand-flake b{font-family:var(--display);font-size:1rem;background:linear-gradient(135deg,var(--cyan-light),var(--cyan) 55%,#cfe4f7);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em}
+.brand-name{font-family:var(--display);font-size:.98rem;letter-spacing:.02em;line-height:1.1}
+.brand-sub{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.3em;color:var(--cyan);margin-top:3px}
+.nav{display:flex;gap:30px}
+.nav a{color:rgba(234,245,251,.8);font-weight:700;font-size:.88rem;letter-spacing:.02em;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--cyan);transition:width .3s}
+.nav a:hover{color:#fff}
+.nav a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-family:var(--body);border-radius:12px;padding:15px 26px;border:1px solid transparent;font-size:.95rem;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,border-color .25s}
+.btn:active{transform:scale(.97)}
+.btn-coral{background:linear-gradient(180deg,var(--coral),var(--coral-deep));color:#fff;box-shadow:0 14px 30px -12px rgba(242,78,46,.55)}
+.btn-coral:hover{transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(242,78,46,.65)}
+.btn-ghost{border-color:rgba(234,245,251,.35);color:var(--ice)}
+.btn-ghost:hover{background:rgba(234,245,251,.08);transform:translateY(-2px)}
+.btn-wa{background:var(--whats);color:#fff;box-shadow:0 14px 30px -12px rgba(34,193,94,.55)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(34,193,94,.6)}
+.btn-sm{padding:10px 18px;font-size:.82rem;border-radius:10px}
+.burger{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ice);transition:.3s}
+#hdr.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#hdr.open .burger span:nth-child(2){opacity:0}
+#hdr.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(1200px 600px at 85% -10%,rgba(74,155,224,.18),transparent 60%),linear-gradient(180deg,var(--navy-900),var(--navy-800) 70%,var(--navy-900));color:var(--ice);position:relative;overflow:hidden}
+.hero-flow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.flow{fill:none;stroke:rgba(74,155,224,.2);stroke-width:1.6;stroke-dasharray:6 16;animation:flowMove 8s linear infinite}
+.f2{animation-duration:11s;stroke:rgba(74,155,224,.12)}
+.f3{animation-duration:14s;stroke:rgba(255,107,74,.1)}
+@keyframes flowMove{to{stroke-dashoffset:-220}}
+.flake{position:absolute;color:rgba(234,245,251,.22);font-size:.9rem;animation:drift 12s ease-in-out infinite;pointer-events:none}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(-14px,22px) rotate(40deg)}50%{transform:translate(10px,44px) rotate(-30deg)}75%{transform:translate(-8px,20px) rotate(20deg)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding-block:76px 64px;position:relative}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;display:inline-flex;gap:12px;align-items:center;color:var(--cyan)}
+.kicker::before{content:"";width:28px;height:1px;background:currentColor}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.06;margin:22px 0 20px;letter-spacing:-.01em}
+.hero h1 .accent{color:var(--cyan)}
+.lm{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.lm>span{display:block}
+html.js [data-reveal] .lm>span{transform:translateY(118%);transition:transform .95s cubic-bezier(.22,.75,.2,1)}
+html.js [data-reveal].in .lm>span{transform:none}
+.lm:nth-child(2)>span{transition-delay:.12s}
+.lm:nth-child(3)>span{transition-delay:.24s}
+.lead{color:rgba(234,245,251,.78);font-size:1.08rem;max-width:52ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 34px}
+
+/* temp panel */
+.temp-panel{display:flex;align-items:center;gap:22px;flex-wrap:wrap;background:rgba(5,15,31,.6);border:1px solid rgba(74,155,224,.3);border-radius:14px;padding:18px 22px;max-width:560px;position:relative}
+.tp-cell{display:flex;flex-direction:column;gap:4px}
+.tp-tag{font-size:.6rem;letter-spacing:.22em}
+.tp-tag.hot{color:var(--coral)}
+.tp-tag.cold{color:var(--cyan)}
+.tp-val{font-size:1.7rem;font-weight:600;color:#fff}
+.tp-val b{font-weight:600;font-size:1.7rem}
+.tp-flow{color:var(--cyan);font-size:1.2rem;animation:flakePulse 2.4s ease-in-out infinite}
+@keyframes flakePulse{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}
+.tp-bar{flex:1 1 100%;height:6px;border-radius:99px;background:linear-gradient(90deg,var(--coral),#f7b23a 35%,var(--cyan) 75%);position:relative;overflow:hidden;opacity:.9}
+.tp-bar i{position:absolute;inset:0;right:auto;width:12%;background:rgba(5,15,31,.85);border-radius:99px;transition:width 2.2s cubic-bezier(.3,.7,.2,1)}
+.tp-note{flex:1 1 100%;font-family:var(--body);font-size:.78rem;color:rgba(234,245,251,.55)}
+
+/* hero visual */
+.hero-visual{position:relative}
+.hero-visual::before{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:2px dashed rgba(74,155,224,.4);border-radius:20px;z-index:0}
+.frame{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 34px 70px -28px rgba(2,10,18,.8);z-index:1;background:var(--navy-700)}
+.frame img{width:100%;aspect-ratio:1/1.02;object-fit:cover;animation:kb 20s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.09) translate(-1.5%,1.5%)}}
+.frame::after{content:"";position:absolute;inset:0;border:1px solid rgba(234,245,251,.18);border-radius:16px;pointer-events:none}
+.float-badge{position:absolute;background:#fff;color:var(--ink);border-radius:12px;padding:12px 16px;font-weight:800;font-size:.82rem;box-shadow:0 18px 40px -16px rgba(2,10,18,.6);animation:floaty 5s ease-in-out infinite alternate;z-index:3;display:flex;gap:8px;align-items:center}
+.fb-1{top:26px;left:-26px}
+.fb-2{bottom:44px;right:-16px;animation-delay:1.3s;background:var(--navy-800);color:var(--ice);border:1px solid rgba(74,155,224,.45)}
+@keyframes floaty{from{transform:translateY(-7px)}to{transform:translateY(8px)}}
+
+/* marquee */
+.marquee{border-top:1px solid rgba(234,245,251,.12);background:rgba(5,15,31,.55);overflow:hidden;padding:15px 0}
+.marquee-track{display:flex;align-items:center;gap:46px;width:max-content;animation:mq 32s linear infinite;font-family:var(--mono);letter-spacing:.24em;font-size:.7rem;color:rgba(234,245,251,.6);text-transform:uppercase;white-space:nowrap}
+.marquee-track .fx{color:var(--cyan)}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- reveal generic ---------- */
+html.js [data-reveal]{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.22,.75,.2,1);transition-delay:var(--d,0s)}
+html.js [data-reveal].in{opacity:1;transform:none}
+
+/* ---------- section base ---------- */
+.sec{padding-block:100px}
+.sec-head{margin-bottom:54px;max-width:720px}
+.sec-title{font-size:clamp(1.9rem,3.6vw,2.75rem);line-height:1.12;margin-top:18px;letter-spacing:-.01em}
+.sec-light .sec-title{color:var(--navy-800)}
+.sec-dark .sec-title{color:var(--ice)}
+.sec-dark .kicker{color:var(--cyan)}
+.sec-light .kicker{color:var(--cyan-deep)}
+
+/* ---------- servicios ---------- */
+.sec-light{background:var(--ice)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 28px 28px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease;box-shadow:0 1px 3px rgba(8,33,51,.06)}
+.card::before{content:"";position:absolute;top:0;left:0;height:4px;width:46px;background:var(--acc);transition:width .5s ease;border-radius:0 0 6px 0}
+.card:hover{transform:translateY(-9px);box-shadow:0 26px 50px -20px rgba(8,33,51,.3)}
+.card:hover::before{width:100%}
+.c-cyan{--acc:var(--cyan)}
+.c-teal{--acc:var(--teal)}
+.c-coral{--acc:var(--coral)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+.card-num{font-family:var(--mono);color:rgba(13,35,52,.3);font-size:.78rem;letter-spacing:.24em}
+.card-emoji{width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-size:1.7rem}
+.c-cyan .card-emoji{background:#E3EFFA}
+.c-teal .card-emoji{background:#DFF5F2}
+.c-coral .card-emoji{background:#FFECE5}
+.card h3{font-family:var(--display);font-size:1.3rem;color:var(--navy-800);margin-bottom:12px}
+.card p{color:var(--muted);font-size:.93rem}
+.card-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.card-tags li{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:var(--muted)}
+
+/* ---------- pasos ---------- */
+.steps-band{background:var(--white);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-block:64px}
+.step{position:relative;padding-right:14px}
+.step-num{width:46px;height:46px;border-radius:50%;background:var(--navy-800);color:var(--cyan);display:grid;place-items:center;font-family:var(--mono);font-size:.82rem;margin-bottom:16px;transition:transform .3s,background .3s}
+.step:hover .step-num{transform:scale(1.12);background:var(--cyan-deep);color:#fff}
+.step h4{font-family:var(--display);font-size:.98rem;color:var(--navy-800);margin-bottom:8px}
+.step p{font-size:.85rem;color:var(--muted)}
+.step:not(:last-child)::after{content:"";position:absolute;top:23px;right:-14px;width:34px;border-top:2px dashed rgba(13,35,52,.18)}
+
+/* ---------- sobre mí ---------- */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:start}
+.about-sticky{position:sticky;top:110px}
+.about-frame{position:relative}
+.about-frame::before{content:"";position:absolute;inset:0;transform:translate(-16px,16px);border:2px dashed rgba(30,99,176,.4);border-radius:20px}
+.about-frame .frame{box-shadow:0 28px 60px -26px rgba(8,33,51,.45)}
+.about-frame img{aspect-ratio:1/1.05;object-fit:cover;object-position:top;animation:none}
+.about-badge{position:absolute;bottom:26px;left:-22px;background:var(--navy-800);color:var(--ice);border-radius:14px;padding:16px 20px;box-shadow:0 20px 44px -18px rgba(8,33,51,.55);z-index:2;border:1px solid rgba(74,155,224,.4)}
+.about-badge b{display:block;font-family:var(--display);color:var(--cyan);font-size:1rem}
+.about-badge span{font-size:.76rem;color:rgba(234,245,251,.7)}
+.about-copy p{color:var(--muted);font-size:1.02rem}
+.about-copy p strong{color:var(--navy-800)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 30px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 18px;transition:transform .3s,box-shadow .3s}
+.stat:hover{transform:translateY(-5px);box-shadow:0 18px 36px -18px rgba(8,33,51,.25)}
+.stat b{font-family:var(--display);font-size:1.75rem;color:var(--navy-800);display:block;line-height:1.1}
+.stat b em{font-style:normal;color:var(--cyan-deep)}
+.stat span{color:var(--muted);font-size:.8rem}
+.chips-label{font-family:var(--mono);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);transition:border-color .3s,color .3s,transform .3s}
+.chips span:hover{border-color:var(--cyan-deep);color:var(--cyan-deep);transform:translateY(-2px)}
+
+/* ---------- ventajas ---------- */
+.sec-dark{background:linear-gradient(180deg,var(--navy-900),var(--navy-800));color:var(--ice);position:relative;overflow:hidden}
+.adv-flow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.adv-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;position:relative}
+.adv-left p{color:rgba(234,245,251,.7);margin-top:18px;font-size:1rem}
+.adv-quote{margin-top:30px;border-left:3px solid var(--cyan);padding:6px 0 6px 20px;font-size:.95rem;color:rgba(234,245,251,.85);font-weight:600}
+.adv-left .btn{margin-top:34px}
+.adv-list li{display:flex;gap:20px;padding:24px 4px;border-bottom:1px solid rgba(234,245,251,.12);align-items:flex-start}
+.adv-list li:first-child{border-top:1px solid rgba(234,245,251,.12)}
+.adv-ic{flex:0 0 36px;height:36px;border-radius:11px;background:rgba(74,155,224,.16);color:var(--cyan);display:grid;place-items:center;margin-top:2px}
+.check{width:18px;height:18px}
+.check path{stroke-dasharray:30;stroke-dashoffset:30;transition:stroke-dashoffset .7s ease .25s}
+.in .check path{stroke-dashoffset:0}
+.adv-list h3{font-family:var(--display);font-size:1.02rem;color:#fff;margin-bottom:5px;letter-spacing:.01em}
+.adv-list p{color:rgba(234,245,251,.62);font-size:.88rem}
+
+/* ---------- testimonios ---------- */
+.testi-sec{background:var(--white)}
+.testi-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:54px}
+.testi-score{display:flex;align-items:center;gap:16px;background:var(--ice);border:1px solid var(--line);border-radius:14px;padding:16px 22px}
+.testi-score b{font-family:var(--display);font-size:1.9rem;color:var(--navy-800)}
+.testi-score .stars{color:var(--coral);letter-spacing:2px;font-size:.95rem}
+.testi-score span{display:block;font-size:.74rem;color:var(--muted)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi{background:var(--ice-2);border:1px solid var(--line);border-radius:18px;padding:30px 26px;position:relative;transition:transform .4s cubic-bezier(.22,.75,.2,1),box-shadow .4s}
+.testi::before{content:"“";position:absolute;top:8px;right:22px;font-family:var(--display);font-size:4.4rem;color:rgba(74,155,224,.2);line-height:1}
+.testi:nth-child(1){transform:rotate(-1.2deg)}
+.testi:nth-child(2){transform:rotate(.9deg)}
+.testi:nth-child(3){transform:rotate(-.7deg)}
+.testi:hover{transform:rotate(0) translateY(-8px);box-shadow:0 26px 50px -22px rgba(8,33,51,.28)}
+.testi .stars{color:var(--coral);letter-spacing:3px;font-size:.85rem;margin-bottom:14px}
+.testi p{font-size:.93rem;color:var(--ink);font-weight:600;line-height:1.6}
+.testi-foot{display:flex;align-items:center;gap:12px;margin-top:22px;padding-top:18px;border-top:1px dashed rgba(13,35,52,.15)}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:.85rem;color:#fff;flex-shrink:0}
+.av-1{background:linear-gradient(140deg,var(--cyan),var(--cyan-deep))}
+.av-2{background:linear-gradient(140deg,var(--teal),#0b6f6c)}
+.av-3{background:linear-gradient(140deg,var(--coral),var(--coral-deep))}
+.testi-foot b{display:block;font-size:.88rem;color:var(--navy-800);line-height:1.25}
+.testi-foot span{font-size:.74rem;color:var(--muted)}
+.svc-chip{margin-left:auto;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(30,99,176,.35);color:var(--cyan-deep);border-radius:999px;padding:5px 10px;white-space:nowrap}
+
+/* ---------- FAQ ---------- */
+.faq-sec{background:var(--ice)}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.faq-left p{color:var(--muted);margin-top:18px}
+.faq-left .mini-cta{display:inline-flex;align-items:center;gap:10px;margin-top:28px;font-weight:800;color:var(--cyan-deep);border-bottom:2px solid var(--cyan-deep);padding-bottom:3px;transition:gap .3s}
+.faq-left .mini-cta:hover{gap:16px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.faq-item.open{border-color:rgba(30,99,176,.45);box-shadow:0 18px 40px -22px rgba(8,33,51,.25)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;background:none;border:0;font-family:var(--body);font-weight:800;font-size:.96rem;color:var(--navy-800);padding:22px 24px;cursor:pointer;text-align:left}
+.faq-q .q-ic{flex:0 0 30px;height:30px;border-radius:9px;background:var(--ice);color:var(--cyan-deep);display:grid;place-items:center;font-size:1.1rem;font-weight:800;transition:transform .35s,background .35s,color .35s}
+.faq-item.open .q-ic{transform:rotate(45deg);background:var(--cyan-deep);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.3,.7,.2,1)}
+.faq-a p{padding:0 24px 22px;color:var(--muted);font-size:.92rem}
+
+/* ---------- urgencias ribbon ---------- */
+.urgency{background:linear-gradient(120deg,var(--coral),var(--coral-deep));color:#fff;position:relative;overflow:hidden}
+.urgency::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 22px,transparent 22px 44px);pointer-events:none}
+.urg-in{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-block:36px;position:relative}
+.urg-left{display:flex;align-items:center;gap:20px}
+.pulse-dot{width:14px;height:14px;border-radius:50%;background:#fff;flex-shrink:0;position:relative}
+.pulse-dot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid rgba(255,255,255,.65);animation:pulse 1.8s ease-out infinite}
+.urgency h3{font-family:var(--display);font-size:clamp(1.1rem,2.4vw,1.5rem);line-height:1.25}
+.urgency .urg-sub{font-size:.86rem;opacity:.9}
+.urgency .btn{background:#fff;color:var(--coral-deep);box-shadow:0 14px 30px -12px rgba(0,0,0,.35)}
+.urgency .btn:hover{transform:translateY(-2px)}
+
+/* ---------- contacto ---------- */
+.cta{position:relative;overflow:hidden;background:var(--navy-950);color:var(--ice)}
+.cta-bg{position:absolute;inset:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.cta-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,15,31,.93),rgba(5,15,31,.68) 45%,rgba(5,15,31,.95))}
+.cta-in{position:relative;z-index:2;padding-block:110px}
+.cta-title{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.08;margin:20px 0 14px}
+.cta-title .accent{color:var(--cyan)}
+.cta-sub{color:rgba(234,245,251,.75);max-width:56ch}
+.cta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.tile{background:rgba(8,27,51,.78);border:1px solid rgba(234,245,251,.14);border-radius:16px;padding:28px 24px;backdrop-filter:blur(4px);transition:transform .35s,border-color .35s,box-shadow .35s;display:block}
+.tile:hover{transform:translateY(-7px);box-shadow:0 26px 50px -22px rgba(0,0,0,.7)}
+.tile-phone:hover{border-color:var(--coral)}
+.tile-wa:hover{border-color:var(--whats)}
+.tile-mail:hover{border-color:var(--cyan-light)}
+.tile-hours:hover{border-color:var(--cyan)}
+.tile-ic{font-size:1.5rem;display:block;margin-bottom:14px}
+.tile-k{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(234,245,251,.55);display:block;margin-bottom:8px}
+.tile b{font-family:var(--display);font-size:.98rem;color:#fff;display:block;line-height:1.35;word-break:break-word}
+.tile-note{display:block;margin-top:10px;font-size:.78rem;color:rgba(234,245,251,.6)}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-950);border-top:1px solid rgba(234,245,251,.08);color:rgba(234,245,251,.55);padding:44px 0}
+.foot-in{display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center}
+.foot-brand{display:flex;align-items:center;gap:10px;color:var(--ice);font-family:var(--display);font-size:.9rem}
+.foot-brand .brand-flake{width:34px;height:34px;border-radius:9px}
+.foot-brand .brand-flake b{font-size:.8rem}
+.foot-copy{font-size:.82rem;max-width:70ch}
+.foot-mono{font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(234,245,251,.4)}
+
+/* ---------- wa float ---------- */
+.wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:var(--whats);display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(34,193,94,.6);z-index:120;transition:transform .3s}
+.wa-float:hover{transform:scale(1.1) rotate(6deg)}
+.wa-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(34,193,94,.5);animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.82);opacity:.9}100%{transform:scale(1.3);opacity:0}}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+/* ---------- focus ---------- */
+a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:6px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .hero-visual{max-width:560px}
+  .cards{grid-template-columns:1fr;max-width:560px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:not(:last-child)::after{display:none}
+  .about-grid,.faq-grid{grid-template-columns:1fr;gap:56px}
+  .about-sticky{position:static}
+  .adv-wrap{grid-template-columns:1fr;gap:44px}
+  .cta-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-grid{grid-template-columns:1fr;max-width:560px}
+  .testi:nth-child(1),.testi:nth-child(2),.testi:nth-child(3){transform:none}
+}
+@media (max-width:860px){
+  .burger{display:flex}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy-900);flex-direction:column;gap:4px;padding:18px 24px 24px;border-bottom:1px solid rgba(234,245,251,.1)}
+  #hdr.open .nav{display:flex}
+  .nav a{padding:12px 0;font-size:1rem}
+  .hdr-cta{display:none}
+  .brand-sub{display:none}
+  .urg-in{justify-content:center;text-align:center}
+  .urg-left{flex-direction:column;gap:12px}
+}
+@media (max-width:640px){
+  .cta-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .fb-1{left:-8px}
+  .fb-2{right:-6px}
+  .about-badge{left:-8px}
+  .sec{padding-block:76px}
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  html.js [data-reveal]{opacity:1;transform:none}
+  html.js [data-reveal] .lm>span{transform:none}
+  .marquee-track{animation:none;flex-wrap:wrap;width:auto;white-space:normal}
+  .check path{stroke-dashoffset:0}
+  .frame img{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+
+<div class="topstrip">
+  <div class="wrap ts-in">
+    <span>🕐 Lun – Sáb · 8:00 AM – 8:00 PM</span><span class="fx">❄</span>
+    <span>Cool Comfort, Quality Service</span><span class="fx">❄</span>
+    <span>📞 305 993 9509</span>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-flake"><b>DG</b></span>
+      <span>
+        <span class="brand-name">Delvis Gutierrez</span>
+        <span class="brand-sub">AIR CONDITIONING</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-coral btn-sm hdr-cta" href="tel:+13059939509">📞 305 993 9509</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <svg class="hero-flow" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="flow f1" d="M-50 120 C 250 60, 500 180, 800 110 S 1250 150, 1300 90"/>
+    <path class="flow f2" d="M-50 320 C 300 260, 600 380, 900 300 S 1250 340, 1300 280"/>
+    <path class="flow f3" d="M-50 500 C 250 450, 550 560, 850 480 S 1250 520, 1300 460"/>
+  </svg>
+  <span class="flake" style="top:14%;left:6%">❄</span>
+  <span class="flake" style="top:30%;left:48%;animation-delay:2s">❄</span>
+  <span class="flake" style="top:64%;left:12%;animation-delay:4s">❄</span>
+  <span class="flake" style="top:20%;left:88%;animation-delay:1s">❄</span>
+  <span class="flake" style="top:72%;left:70%;animation-delay:5s">❄</span>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy" data-reveal>
+      <p class="kicker">Delvis Gutierrez Air Conditioning · Miami y alrededores</p>
+      <h1 class="display">
+        <span class="lm"><span>Reparación y Montaje</span></span>
+        <span class="lm"><span>de Aire Acondicionado</span></span>
+        <span class="lm"><span class="accent">en el Sur de Florida</span></span>
+      </h1>
+      <h2 class="lead" style="font-weight:400">Servicio técnico profesional, rápido y confiable. Atendemos Miami, Fort Lauderdale, West Palm Beach y toda el área.</h2>
+      <div class="hero-cta">
+        <a class="btn btn-coral" href="tel:+13059939509">📞 Llama ahora: 305 993 9509</a>
+        <a class="btn btn-wa" href="https://wa.me/13059939509" target="_blank" rel="noopener">✉️ WhatsApp</a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios ↓</a>
+      </div>
+      <div class="temp-panel mono" aria-label="Comparación de temperatura">
+        <div class="tp-cell">
+          <span class="tp-tag hot">EXTERIOR · MIAMI</span>
+          <span class="tp-val"><b id="tempOut">95</b>°F</span>
+        </div>
+        <span class="tp-flow" aria-hidden="true">❄</span>
+        <div class="tp-cell">
+          <span class="tp-tag cold">TU HOGAR</span>
+          <span class="tp-val"><b id="tempIn">72</b>°F</span>
+        </div>
+        <div class="tp-bar"><i id="tpBar"></i></div>
+        <span class="tp-note">De esa diferencia me encargo yo. ❄</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal style="--d:.15s">
+      <div class="frame">
+        <img src="img/delvis-casa.jpg"public_source/a5f31d25-acd2-485d-a109-cc15af396455/181f90902-7468-4d84-81f5-4a395cbea362.png" alt="Técnico profesional revisando un aire acondicionado tipo split en un hogar de Florida">
+      </div>
+      <div class="float-badge fb-1">✅ Garantía en todos los trabajos</div>
+      <div class="float-badge fb-2 mono">⚡ RESPUESTA INMEDIATA</div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="mqTrack">
+      <span>Miami</span><span class="fx">❄</span><span>Fort Lauderdale</span><span class="fx">❄</span>
+      <span>West Palm Beach</span><span class="fx">❄</span><span>Hialeah</span><span class="fx">❄</span>
+      <span>Hollywood</span><span class="fx">❄</span><span>Pompano Beach</span><span class="fx">❄</span>
+      <span>Boca Ratón</span><span class="fx">❄</span><span>Coral Springs</span><span class="fx">❄</span>
+      <span>Miami Beach</span><span class="fx">❄</span><span>Kendall</span><span class="fx">❄</span>
+      <span>Aventura</span><span class="fx">❄</span><span>Boynton Beach</span><span class="fx">❄</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="sec sec-light" id="servicios">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="kicker">Mis servicios</p>
+      <h2 class="sec-title display">Todo lo que tu clima necesita, en una sola llamada</h2>
+    </div>
+    <div class="cards">
+      <article class="card c-cyan" data-reveal style="--d:.05s">
+        <div class="card-top">
+          <span class="card-emoji">🔧</span>
+          <span class="card-num">/ 01</span>
+        </div>
+        <h3>Reparación</h3>
+        <p>Diagnóstico y solución de averías en todas las marcas y modelos. Desde problemas eléctricos hasta fugas de gas, lo soluciono con rapidez y garantía.</p>
+        <ul class="card-tags">
+          <li>Averías eléctricas</li><li>Fugas de gas</li><li>Todas las marcas</li>
+        </ul>
+      </article>
+      <article class="card c-teal" data-reveal style="--d:.15s">
+        <div class="card-top">
+          <span class="card-emoji">🛠️</span>
+          <span class="card-num">/ 02</span>
+        </div>
+        <h3>Montaje</h3>
+        <p>Instalación profesional de equipos nuevos y usados. Me aseguro de que tu sistema quede perfectamente calibrado para un máximo rendimiento y ahorro energético.</p>
+        <ul class="card-tags">
+          <li>Equipos nuevos y usados</li><li>Calibración precisa</li><li>Ahorro energético</li>
+        </ul>
+      </article>
+      <article class="card c-coral" data-reveal style="--d:.25s">
+        <div class="card-top">
+          <span class="card-emoji">🧼</span>
+          <span class="card-num">/ 03</span>
+        </div>
+        <h3>Mantenimiento</h3>
+        <p>Limpieza profunda, carga de gas, revisión de filtros y chequeo completo de todo el sistema. Alarga la vida útil de tu equipo y evita averías costosas.</p>
+        <ul class="card-tags">
+          <li>Limpieza profunda</li><li>Carga de gas</li><li>Revisión de filtros</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PASOS ============ -->
+<div class="steps-band">
+  <div class="wrap">
+    <div class="steps">
+      <div class="step" data-reveal style="--d:.05s">
+        <span class="step-num">01</span>
+        <h4>Llamada o WhatsApp</h4>
+        <p>Cuéntame qué le pasa a tu equipo y coordinamos la visita el mismo día.</p>
+      </div>
+      <div class="step" data-reveal style="--d:.15s">
+        <span class="step-num">02</span>
+        <h4>Diagnóstico honesto</h4>
+        <p>Reviso el sistema a fondo y te explico la avería en un lenguaje claro.</p>
+      </div>
+      <div class="step" data-reveal style="--d:.25s">
+        <span class="step-num">03</span>
+        <h4>Precio cerrado</h4>
+        <p>Presupuesto transparente antes de empezar. Sin sorpresas ni letra pequeña.</p>
+      </div>
+      <div class="step" data-reveal style="--d:.35s">
+        <span class="step-num">04</span>
+        <h4>Frío garantizado</h4>
+        <p>Reparo o instalo, dejo todo funcionando y respaldado por garantía.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SOBRE MÍ ============ -->
+<section class="sec sec-light" id="sobre-mi" style="background:var(--ice-2)">
+  <div class="wrap about-grid">
+    <div class="about-sticky" data-reveal>
+      <div class="about-frame">
+        <div class="frame">
+          <img src="img/delvis-retrato.jpg"public_source/a5f31d25-acd2-485d-a109-cc15af396455/159ab3c94-53ea-46eb-a43f-12893f2d82a8.png" alt="Retrato de Delvis Gutierrez, técnico de aire acondicionado, junto a su furgoneta de servicio en Miami">
+        </div>
+        <div class="about-badge">
+          <b>✔ Trabajo garantizado</b>
+          <span>Cool Comfort, Quality Service</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-copy" data-reveal style="--d:.1s">
+      <p class="kicker">Sobre mí</p>
+      <h2 class="sec-title display" style="color:var(--navy-800)">Delvis Gutierrez, tu técnico de confianza en Miami</h2>
+      <p style="margin-top:22px">Con más de <strong>[X] años de experiencia</strong> en el sector, ofrezco un servicio honesto, con precios claros y sin letra pequeña. Mi compromiso es que tu hogar o negocio disfrute de un clima perfecto, con la tranquilidad de saber que el trabajo está bien hecho.</p>
+      <div class="stats">
+        <div class="stat">
+          <b><span data-count="850" data-prefix="+">+0</span></b>
+          <span>Reparaciones y montajes realizados</span>
+        </div>
+        <div class="stat">
+          <b><span data-count="4.9" data-decimals="1">0</span><em>★</em></b>
+          <span>Valoración media de clientes</span>
+        </div>
+        <div class="stat">
+          <b>&lt;24<em>h</em></b>
+          <span>Tiempo de respuesta habitual</span>
+        </div>
+      </div>
+      <p class="chips-label">Marcas que atiendo habitualmente</p>
+      <div class="chips">
+        <span>Carrier</span><span>Trane</span><span>LG</span><span>Samsung</span><span>Daikin</span>
+        <span>Goodman</span><span>Rheem</span><span>York</span><span>Lennox</span><span>Bosch</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENTAJAS ============ -->
+<section class="sec sec-dark" id="ventajas">
+  <svg class="adv-flow" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="flow f1" d="M-50 150 C 300 90, 600 210, 900 140 S 1250 180, 1300 120"/>
+    <path class="flow f2" d="M-50 450 C 300 390, 600 510, 900 430 S 1250 470, 1300 410"/>
+  </svg>
+  <div class="wrap adv-wrap">
+    <div class="adv-left" data-reveal>
+      <p class="kicker">Por qué elegirme</p>
+      <h2 class="sec-title display">El frío no espera. Yo tampoco.</h2>
+      <p>En el calor de Florida, un aire averiado no es un lujo: es una urgencia. Por eso trabajo con rapidez, claridad y garantía en cada visita.</p>
+      <div class="adv-quote">"Cool Comfort, Quality Service. Mi reputación se construye casa por casa, cliente por cliente."</div>
+      <a class="btn btn-coral" href="#contacto">Pedir presupuesto →</a>
+    </div>
+    <ul class="adv-list">
+      <li data-reveal style="--d:.05s">
+        <span class="adv-ic"><svg class="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Diagnóstico rápido y sin compromiso</h3>
+          <p>En la primera visita ya sabrás qué tiene tu equipo y cuánto cuesta arreglarlo.</p>
+        </div>
+      </li>
+      <li data-reveal style="--d:.12s">
+        <span class="adv-ic"><svg class="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Precios competitivos y transparentes</h3>
+          <p>Presupuesto cerrado antes de tocar una sola herramienta. Sin sorpresas.</p>
+        </div>
+      </li>
+      <li data-reveal style="--d:.19s">
+        <span class="adv-ic"><svg class="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Garantía en todos los trabajos</h3>
+          <p>Cada reparación e instalación queda respaldada por escrito.</p>
+        </div>
+      </li>
+      <li data-reveal style="--d:.26s">
+        <span class="adv-ic"><svg class="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Respuesta inmediata en toda el sur de Florida</h3>
+          <p>Proudly serving Miami and surrounding areas: de Miami a West Palm Beach.</p>
+        </div>
+      </li>
+      <li data-reveal style="--d:.33s">
+        <span class="adv-ic"><svg class="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Atención personalizada y de confianza</h3>
+          <p>Trato directo con Delvis antes, durante y después del servicio.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="sec testi-sec" id="opiniones">
+  <div class="wrap">
+    <div class="testi-head" data-reveal>
+      <div>
+        <p class="kicker" style="color:var(--cyan-deep)">Opiniones reales</p>
+        <h2 class="sec-title display" style="color:var(--navy-800)">Clientes que ya respiran fresquito</h2>
+      </div>
+      <div class="testi-score">
+        <b>4.9</b>
+        <div>
+          <span class="stars">★★★★★</span>
+          <span>Valoración media · +120 clientes felices</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-grid">
+      <article class="testi" data-reveal style="--d:.05s">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <p>"Mi aire dejó de enfriar un domingo con 95 grados. Llamé, vino el mismo día y en dos horas ya estaba helando otra vez. Precio justo y todo explicado clarito."</p>
+        <div class="testi-foot">
+          <span class="avatar av-1">CM</span>
+          <div>
+            <b>Carlos M.</b>
+            <span>Miami · Reparación</span>
+          </div>
+          <span class="svc-chip">🔧 Reparación</span>
+        </div>
+      </article>
+      <article class="testi" data-reveal style="--d:.15s">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <p>"Instaló el split de mi apartamento en una mañana. Limpio, puntual y dejó el equipo calibrado perfecto. La factura de luz bajó desde el primer mes."</p>
+        <div class="testi-foot">
+          <span class="avatar av-2">YR</span>
+          <div>
+            <b>Yusleidy R.</b>
+            <span>Hialeah · Montaje</span>
+          </div>
+          <span class="svc-chip">🛠️ Montaje</span>
+        </div>
+      </article>
+      <article class="testi" data-reveal style="--d:.25s">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <p>"Llevamos dos años con él para el mantenimiento de la casa y del local. Nunca falla: avisa cuando toca, llega puntual y el equipo ni se entera del verano."</p>
+        <div class="testi-foot">
+          <span class="avatar av-3">RS</span>
+          <div>
+            <b>Robert &amp; Anne S.</b>
+            <span>Fort Lauderdale · Mantenimiento</span>
+          </div>
+          <span class="svc-chip">🧼 Manten.</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq-sec" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-left" data-reveal>
+      <p class="kicker">Preguntas frecuentes</p>
+      <h2 class="sec-title display" style="color:var(--navy-800)">Resuelvo tus dudas antes de que preguntes</h2>
+      <p>Si tu pregunta no está aquí, escríbeme por WhatsApp o al correo delvisgutierrez203@gmail.com y te respondo en minutos. Sin compromiso y sin letra pequeña.</p>
+      <a class="mini-cta" href="https://wa.me/13059939509" target="_blank" rel="noopener">✉️ Pregúntame por WhatsApp →</a>
+    </div>
+    <div class="faq-list" data-reveal style="--d:.1s">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Cuánto cuesta el diagnóstico?<span class="q-ic">+</span></button>
+        <div class="faq-a"><p>El diagnóstico es rápido y sin compromiso. Reviso tu equipo, te explico la avería con claridad y te doy el precio cerrado antes de empezar cualquier trabajo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Qué marcas reparas e instalas?<span class="q-ic">+</span></button>
+        <div class="faq-a"><p>Todas las marcas y modelos: Carrier, Trane, LG, Samsung, Daikin, Goodman, Rheem, York, Lennox, Bosch y muchas más. Si tu equipo existe, yo lo arreglo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Ofreces garantía en los trabajos?<span class="q-ic">+</span></button>
+        <div class="faq-a"><p>Sí, todos los trabajos incluyen garantía por escrito. Si algo falla dentro del período de garantía, vuelvo y lo soluciono sin coste adicional.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Cuánto tarda una instalación?<span class="q-ic">+</span></button>
+        <div class="faq-a"><p>Un montaje estándar (split de pared o sistema central) suele completarse en el mismo día, normalmente entre 3 y 5 horas, dependiendo de la complejidad y el estado de la instalación previa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Trabajas fines de semana?<span class="q-ic">+</span></button>
+        <div class="faq-a"><p>Sí, atiendo de lunes a sábado de 8:00 AM a 8:00 PM. Para urgencias fuera de ese horario, llámame al 305 993 9509 o escríbeme y vemos la disponibilidad.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ URGENCIAS ============ -->
+<div class="urgency">
+  <div class="wrap urg-in" data-reveal>
+    <div class="urg-left">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      <div>
+        <h3>🔥 ¿Aire averiado en pleno verano?</h3>
+        <p class="urg-sub">Servicio de urgencia el mismo día en Miami y alrededores.</p>
+      </div>
+    </div>
+    <a class="btn" href="tel:+13059939509">📞 Llama ya: 305 993 9509</a>
+  </div>
+</div>
+
+<!-- ============ CONTACTO ============ -->
+<section class="cta" id="contacto">
+  <div class="cta-bg" aria-hidden="true">
+    <img src="https://image.qwenlm.ai/public_source/a5f31d25-acd2-485d-a109-cc15af396455/13f4d70ff-aa0f-4431-adad-66344af8e6a2.png" alt="">
+  </div>
+  <div class="wrap cta-in">
+    <div data-reveal>
+      <p class="kicker">Contacto</p>
+      <h2 class="cta-title display">¿Tu aire no enfría?<br><span class="accent">Hoy mismo puede estar helando.</span></h2>
+      <p class="cta-sub">Llámame o escríbeme y en menos de lo que imaginas tu casa vuelve a ser un oasis. Proudly serving Miami and surrounding areas.</p>
+    </div>
+    <div class="cta-grid">
+      <a class="tile tile-phone" href="tel:+13059939509" data-reveal style="--d:.05s">
+        <span class="tile-ic">📞</span>
+        <span class="tile-k mono">Llama ahora</span>
+        <b>305 993 9509</b>
+        <span class="tile-note">Atención directa, sin esperas ni centralitas.</span>
+      </a>
+      <a class="tile tile-wa" href="https://wa.me/13059939509" target="_blank" rel="noopener" data-reveal style="--d:.12s">
+        <span class="tile-ic">✉️</span>
+        <span class="tile-k mono">Escríbeme por WhatsApp</span>
+        <b>WhatsApp directo</b>
+        <span class="tile-note">Envíame una foto o vídeo del equipo y te oriento al momento.</span>
+      </a>
+      <a class="tile tile-mail" href="mailto:delvisgutierrez203@gmail.com" data-reveal style="--d:.19s">
+        <span class="tile-ic">📧</span>
+        <span class="tile-k mono">Correo electrónico</span>
+        <b>delvisgutierrez203@gmail.com</b>
+        <span class="tile-note">Para presupuestos, dudas y presupuestos por escrito.</span>
+      </a>
+      <div class="tile tile-hours" data-reveal style="--d:.26s">
+        <span class="tile-ic">🕐</span>
+        <span class="tile-k mono">Horario</span>
+        <b>Lunes a Sábado<br>8:00 AM – 8:00 PM</b>
+        <span class="tile-note">Urgencias: pregunta por disponibilidad fuera de horario.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-brand"><span class="brand-flake"><b>DG</b></span> Delvis Gutierrez Air Conditioning</div>
+    <p class="foot-copy">© 2026 Delvis Gutierrez Air Conditioning - Reparación y Montaje de Aire Acondicionado en el Sur de Florida</p>
+    <p class="foot-mono">Cool Comfort, Quality Service ❄ Proudly Serving Miami and Surrounding Areas</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/13059939509" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+document.documentElement.classList.add('js');
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* header state + scroll progress */
+var hdr = document.getElementById('hdr');
+var prog = document.getElementById('scrollProgress');
+function onScroll(){
+  hdr.classList.toggle('scrolled', window.scrollY > 14);
+  var doc = document.documentElement;
+  var max = doc.scrollHeight - window.innerHeight;
+  var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+  prog.style.width = pct + '%';
+}
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+/* burger menu */
+var burger = document.getElementById('burger');
+burger.addEventListener('click', function(){
+  var open = hdr.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+document.querySelectorAll('.nav a').forEach(function(a){
+  a.addEventListener('click', function(){ hdr.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+});
+
+/* marquee: duplicate content for seamless loop */
+var mqTrack = document.getElementById('mqTrack');
+if (mqTrack){ mqTrack.innerHTML += mqTrack.innerHTML; }
+
+/* counters */
+function runCounter(el){
+  if (el.dataset.done) return; el.dataset.done = '1';
+  var target = parseFloat(el.dataset.count);
+  var dec = parseInt(el.dataset.decimals || '0', 10);
+  var pre = el.dataset.prefix || '';
+  if (reduced){ el.textContent = pre + target.toFixed(dec); return; }
+  var dur = 1700, t0 = performance.now();
+  (function step(now){
+    var p = Math.min(1, (now - t0) / dur);
+    var e = 1 - Math.pow(1 - p, 3);
+    el.textContent = pre + (target * e).toFixed(dec);
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}
+
+/* reveal on scroll */
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('in');
+    io.unobserve(entry.target);
+    entry.target.querySelectorAll('[data-count]').forEach(runCounter);
+  });
+}, {threshold:.18});
+document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+
+/* FAQ accordion */
+var faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(function(item){
+  var q = item.querySelector('.faq-q');
+  var a = item.querySelector('.faq-a');
+  q.addEventListener('click', function(){
+    var isOpen = item.classList.contains('open');
+    faqItems.forEach(function(other){
+      other.classList.remove('open');
+      other.querySelector('.faq-a').style.maxHeight = null;
+      other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if (!isOpen){
+      item.classList.add('open');
+      a.style.maxHeight = a.scrollHeight + 'px';
+      q.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+/* hero temperature animation */
+var tIn = document.getElementById('tempIn');
+var tOut = document.getElementById('tempOut');
+var tpBar = document.getElementById('tpBar');
+function tweenNum(el, from, to, dur){
+  var t0 = performance.now();
+  (function step(now){
+    var p = Math.min(1, (now - t0) / dur);
+    var e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(from + (to - from) * e);
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}
+function startTemp(){
+  if (reduced){ tpBar.style.width = '78%'; return; }
+  tweenNum(tOut, 97, 95, 1500);
+  tweenNum(tIn, 91, 72, 2100);
+  requestAnimationFrame(function(){ tpBar.style.width = '78%'; });
+}
+setTimeout(startTemp, 500);
+</script>
+</body>
+</html>
